@@ -49,12 +49,10 @@ class InterstitialAds {
                     object : InterstitialAdLoadCallback() {
                         override fun onAdLoaded(interstitialAd: InterstitialAd) {
                             mSplashInterstitialAd = interstitialAd
-                            Log.d("TAG", "onAdLoaded")
                         }
 
                         override fun onAdFailedToLoad(loadAdError: LoadAdError) {
                             mSplashInterstitialAd = null
-                            Log.d("TAG", "LoadAdError ${loadAdError.message}")
 
                         }
                     })
